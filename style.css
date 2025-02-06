@@ -1,0 +1,48 @@
+@charset "UTF-8"
+
+@font-face {
+    font-family: 'overlock';
+    src: url(fontes/Overlock_SC/OverlockSC-Regular.ttf) format(.ttf);
+}
+
+* {
+    --font-padrao: 'overlock';
+    --font-destaque: Arial, Verdana, Helvetica, sans-serif;
+}
+body {
+    font-family: var(--font-padrao);
+}
+
+header {
+    background-color: black;
+    color: white;
+    font-family: var(--font-destaque);
+    text-align: center;
+    height: 100px;
+    padding: 10px;
+}
+
+header > a {
+    text-decoration: none;
+    font-size:large;
+    font-weight: bold;
+}
+
+header > a::after {
+    text-decoration: none;
+}
+
+#pordosol {
+    background-color: black;
+    background-image: url(imagens/sunset-7490522_1920.jpg);
+    height: 300px;
+    position: relative;
+}
+
+#carta {
+    background-color: black;
+    background-image: url(imagens/paper-3091211_1920.jpg);
+    height: 300px;
+    position: relative;
+
+}
