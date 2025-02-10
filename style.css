@@ -6,10 +6,15 @@
 }
 
 * {
+    margin: 0px;
+    padding: 0px;
+
     --font-padrao: 'overlock';
     --font-destaque: Arial, Verdana, Helvetica, sans-serif;
 }
-body {
+html,body {
+    min-height: 100vh;
+    background-color: darkgray;
     font-family: var(--font-padrao);
 }
 
@@ -18,18 +23,52 @@ header {
     color: white;
     font-family: var(--font-destaque);
     text-align: center;
-    height: 100px;
-    padding: 10px;
 }
 
-header > p > a {
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+}
+
+header > p {
+    padding-bottom: 50px;
+    font-size:large;    
+}
+
+header a, footer a {
+    color: white;
     text-decoration: none;
-    font-size:large;
     font-weight: bold;
 }
 
-header > p>  a::after {
+header a, footer a:hover {
+    text-decoration: underline;
+}
+
+a::after {
     text-decoration: none;
+}
+
+section {
+    padding-top: 10vh; /*10vh significa 10% da altura da tela (viewport height)*/
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: rgb(51, 51, 51);
+    color: white;
+}
+
+section.imagem > p {
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.324);
 }
 
 #pordosol {
@@ -45,4 +84,11 @@ header > p>  a::after {
     height: 300px;
     position: relative;
 
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
