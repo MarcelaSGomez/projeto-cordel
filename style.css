@@ -1,33 +1,39 @@
 @charset "UTF-8"
 
-@font-face {
-    font-family: 'overlock';
-    src: url(fontes/Overlock_SC/OverlockSC-Regular.ttf) format(.ttf);
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+
+:root{
+    --font-padrao: "Cedarville Cursive", serif;
+    --font-destaque: "Passion One", serif;
+    --font-detalhes: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 * {
     margin: 0px;
     padding: 0px;
-
-    --font-padrao: 'overlock';
-    --font-destaque: Arial, Verdana, Helvetica, sans-serif;
 }
+
 html,body {
     min-height: 100vh;
     background-color: darkgray;
-    font-family: var(--font-padrao);
+    font-family: var(--font-detalhes);
 }
 
 header {
     background-color: black;
     color: white;
-    font-family: var(--font-destaque);
     text-align: center;
 }
 
 header > h1 {
     padding-top: 50px;
     font-variant: small-caps;
+    font-family:var(--font-destaque);
+    font-size: 6vw;
 }
 
 header > p {
@@ -54,6 +60,9 @@ section {
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--font-padrao);
+    font-size: 3.5vw;
+    
 }
 
 section.normal {
@@ -67,8 +76,9 @@ section.imagem {
 }
 
 section.imagem > p {
-    width: 400px;
+    display: inline-block; /*Esse comando faz com que o box tenha um tamanho de acordo com o tamanho do texto inserido nele.*/
     background-color: rgba(0, 0, 0, 0.324);
+    padding: 5px;
 }
 
 #pordosol {
@@ -91,4 +101,5 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;
+    font-size: 2.5vh;
 }
