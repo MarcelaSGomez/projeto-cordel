@@ -54,12 +54,12 @@ a::after {
 }
 
 section {
-    padding-top: 10vh; /*10vh significa 10% da altura da tela (viewport height)*/
-    padding-bottom: 10vh;
-    line-height: 2em;
+    padding-top: 8vh; /*10vh significa 10% da altura da tela (viewport height)*/
+    padding-bottom: 8vh;
+    line-height: 1.5em;
     padding-left: 30px;
     font-family: var(--font-padrao);
-    font-size: 3.5vw;
+    font-size: 3.2vw;
 }
 
 section.normal {
